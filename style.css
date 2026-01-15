@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(34, 8%, 91%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
+    padding: 50px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    padding: 2em;
+    border: 1px solid #3333335a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #3333335a;
+    width: 100%;
+    max-width: 250px;
+}
+
+.countryInput{
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    font-family: monospace;
+    margin-bottom: 30px;
+    color: hsl(0, 3%, 19%);
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px #3333335a;
+    font-weight: bold;
+}
+
+.enter{
+    background-color: hsla(240, 61%, 48%, 0.9);
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.323);
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.enter:hover{
+    background-color: hsla(240, 61%, 40%, 0.9)
+}
+
+.enter:active{
+    background-color: hsla(0, 100%, 55%, 0.747);
+    color: hsla(0, 0%, 20%, 0.586);
+}
+
+.extractedInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.name{
+    margin-bottom: 10px;
+}
+
+.region{
+    margin-bottom: 10px;
+}
+
+.capital{
+    margin-bottom: 10px;
+}
+
+.population{
+    margin-bottom: 10px;
+}
+
+.image{
+    height: 50px;
+}
+
