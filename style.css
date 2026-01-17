@@ -10,7 +10,7 @@ body{
     justify-content: center;
     background-color: hsl(34, 8%, 91%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Courier, monospace;
-    padding: 50px;
+    padding: 10px;
 }
 
 .container{
@@ -47,17 +47,12 @@ body{
     border: none;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.323);
     cursor: pointer;
-    margin-bottom: 30px;
 }
 
 .enter:hover{
     background-color: hsla(240, 61%, 40%, 0.9)
 }
 
-.enter:active{
-    background-color: hsla(0, 100%, 55%, 0.747);
-    color: hsla(0, 0%, 20%, 0.586);
-}
 
 .extractedInfo{
     display: flex;
@@ -68,6 +63,7 @@ body{
 }
 
 .name{
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
@@ -85,5 +81,11 @@ body{
 
 .image{
     height: 50px;
+}
+
+.errorMessage{
+    margin-top: 10px;
+    color: hsla(0, 0%, 20%, 0.803);
+    text-align: center;
 }
 

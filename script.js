@@ -1,12 +1,14 @@
 let extractedInfo = document.querySelector(".extractedInfo")
 let countryInput = document.querySelector(".countryInput")
 let enter = document.querySelector(".enter")
+let container = document.querySelector(".container")
 
-enter.addEventListener("click", async event=>{
+container.addEventListener("submit", async (event)=>{
     event.preventDefault()
 
     let country = countryInput.value
 
+    extractedInfo.innerHTML = ''
     if(country){
         try{
             let countryData = await getData(country)
@@ -52,26 +54,33 @@ const [{
 
  let name = document.createElement("p")
  name.classList.add("name")
- name.textContent = common
+ name.textContent = `Name: ${common}`
  extractedInfo.appendChild(name)
  
 let region = document.createElement("p")
  region.classList.add("region")
- region.textContent = continent
+ region.textContent = `Region: ${continent}`
  extractedInfo.appendChild(region)
 
 let population = document.createElement("p")
  population.classList.add("population")
- population.textContent = number
+ population.textContent = `Population: ${number}`
  extractedInfo.appendChild(population)
 
   let capital = document.createElement("p")
  capital.classList.add("capital")
- capital.textContent = city
+ capital.textContent = `Capital: ${city}`
  extractedInfo.appendChild(capital)
 
   let image = document.createElement("img")
  image.src = svg
  image.classList.add("image")
  extractedInfo.appendChild(image)
+}
+
+function displayError(error){
+    let errorMessage = document.createElement("p")
+    errorMessage.classList.add("errorMessage")
+    errorMessage.textContent = error
+    extractedInfo.appendChild(errorMessage)
 }
